@@ -1,0 +1,78 @@
+/*
+Theme Name: Twenty Fourteen Child
+Template: twentyfourteen
+Author: Child Theme Configurator
+Version: 1.0.1431393861
+Updated: 2015-05-11 18:24:21
+*/
+
+@charset "UTF-8";
+
+/* show more for mobile */
+@media screen and (max-width: 400px) {
+/*
+.list-view .site-content .cat-links, .list-view .site-content .type-post .entry-content, .list-view .site-content .type-page .entry-content, .list-view .site-content .type-post .entry-summary, .list-view .site-content .type-page .entry-summary, .list-view .site-content footer.entry-meta{
+display:block;
+}
+*/
+
+.list-view .site-content .type-post .entry-content, .list-view .site-content .type-page .entry-content, .list-view .site-content .type-post .entry-summary, .list-view .site-content .type-page .entry-summary, .list-view .site-content footer.entry-meta{
+display:block;
+}
+
+}
+
+.site-info{
+   text-align:right;
+}
+
+
+/* width override */
+/*
+.site, .site-header{
+   max-width:100%;
+}
+
+.site-content .entry-header, .site-content .entry-content, .site-content .entry-summary, .site-content .entry-meta, .page-content{
+   max-width: 600px;
+
+}
+*/
+
+.site-content .entry-header{
+padding-bottom: 0px;
+
+}
+
+.site-content .entry-meta {
+float:left;
+}
+
+.addthis_sharing_toolbox{
+float:left;
+}
+
+.entry-content{
+clear:both;
+}
+
+.entry-title{
+   font-weight: bold;
+   text-transform:none;
+}
+
+ins.ad-link{
+background:none;
+}
+
+/* hide on smaller screen */
+@media screen and (max-width: 593px) {
+ins.top-link{
+display:none;
+}
+}
+
+/* remove adsense yellow background */
+ins.adsbygoogle{
+   background:transparent;
+}
