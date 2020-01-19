@@ -95,10 +95,7 @@
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <div class="addthis_sharing_toolbox"></div>
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- link top --><ins class="adsbygoogle ad-link top-link" style="width:468px;height:15px" data-ad-client="ca-pub-6230689811704800" data-color-link="2b2b2b" data-ad-slot="1640626575"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script></header><!-- .entry-header --><div class="entry-content">
+</header><!-- .entry-header --><div class="entry-content">
 		<p>Today my friend had a problem with his computer, while Windows is booting it restarted unexpectedly without leaving any error message. I tried to boot under safe mode, but still had the same problem, it restarted again. I then tried the start up option “Disable Automatic Restart on System Failure” on the boot menu, this time it gave me the blue screen with the message “<strong>registry error 0x000051</strong>” and it told me that registry was corrupt. Because of this I had to use the recovery console to replace the corrupt registry with the last good registry found inside the <strong>System Volume Information</strong> folder, which is where the <strong>System Restore’s</strong> files located.<br><strong>Here’s how I did that:</strong></p>
 <ol><li>After logging in to the recovery console <strong>cd</strong> to <strong>C:\System Volume Information</strong>, then <strong>dir</strong> to list the directories inside of it, you’ll see a lot of folder named <strong>_restore{*}</strong> along with their date, <strong>cd</strong> to the most recent <strong>_restore{*}</strong> . If you don’t know what recovery console is or you’re not comfortable with it <a href="https://support.microsoft.com/kb/307654">please check out this page</a>.</li>
 <li>List all files inside of it and choose the most recent folder <strong>RPxxx</strong> that you think the registry at that date was still not corrupted.</li>

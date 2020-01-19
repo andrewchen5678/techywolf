@@ -95,10 +95,7 @@
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <div class="addthis_sharing_toolbox"></div>
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- link top --><ins class="adsbygoogle ad-link top-link" style="width:468px;height:15px" data-ad-client="ca-pub-6230689811704800" data-color-link="2b2b2b" data-ad-slot="1640626575"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script></header><!-- .entry-header --><div class="entry-content">
+</header><!-- .entry-header --><div class="entry-content">
 		<p>The pages with wordpress K2 theme loads fast when you click them, but if you try to refresh the page it will be very slow to load, while other themes don’t have this problem. To fix this follow this guide taken from K2’s forum:</p>
 <p>find the folder <strong>js</strong> inside the <strong>K2</strong> folder, then for each <strong>.js.php</strong> file comment out the <strong>‘require(….. wp-blog-header.php)’ </strong>line and replace <strong>‘!get_settings(‘gzipcompression’)’ </strong>with <strong>‘( ob_get_length() === FALSE)’</strong>. After that the first few lines should look like this:<br><code><br>
 //require(dirname(__FILE__)."/../../../../wp-blog-header.php");<br>

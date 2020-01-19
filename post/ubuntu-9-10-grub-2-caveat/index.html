@@ -95,10 +95,7 @@
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <div class="addthis_sharing_toolbox"></div>
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- link top --><ins class="adsbygoogle ad-link top-link" style="width:468px;height:15px" data-ad-client="ca-pub-6230689811704800" data-color-link="2b2b2b" data-ad-slot="1640626575"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script></header><!-- .entry-header --><div class="entry-content">
+</header><!-- .entry-header --><div class="entry-content">
 		<p>Unlike Grub 1.x, in Grub 2 a partition number is the SAME as the number of the corresponding partition number inside of the /dev/ directory instead of that number minus one. For example, if the partition is /dev/sda1, then in Grub 2 it will be (hd0,1) while in the old Grub 1 it is (hd0,0) instead. Today when I install Ubuntu I wasn’t aware of that and I installed grub to (hd0,1), thinking that it is /dev/sda2 (Ubuntu’s partition) while it is actually /dev/sda1 (Windows’s partition) instead! I didn’t realized that until after I reboot and I couldn’t get into Windows. I then have to restore Windows’s boot sectors with Windows’s CD and try to install grub again! When you install Ubuntu 9.10 you have to be aware of this if you are planning to install Grub to a partition instead of the MBR.</p>
 
 	
